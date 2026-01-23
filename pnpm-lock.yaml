@@ -13,7 +13,7 @@ importers:
         version: 1.2.4(@types/react@19.2.9)(react@19.2.3)
       '@t3-oss/env-nextjs':
         specifier: ^0.13.10
-        version: 0.13.10(arktype@2.1.20)(typescript@5.9.3)(zod@4.3.5)
+        version: 0.13.10(arktype@2.1.20)(typescript@5.9.3)(zod@4.3.6)
       '@vercel/analytics':
         specifier: ^1.6.1
         version: 1.6.1(next@15.5.9(@opentelemetry/api@1.9.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react@19.2.3)(vue-router@4.6.3(vue@3.5.25(typescript@5.9.3)))(vue@3.5.25(typescript@5.9.3))
@@ -60,8 +60,8 @@ importers:
         specifier: ^1.1.2
         version: 1.1.2(@types/react-dom@19.2.3(@types/react@19.2.9))(@types/react@19.2.9)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       zod:
-        specifier: ^4.3.5
-        version: 4.3.5
+        specifier: ^4.3.6
+        version: 4.3.6
     devDependencies:
       '@eslint/eslintrc':
         specifier: ^3.3.3
@@ -3538,8 +3538,8 @@ packages:
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
-  zod@4.3.5:
-    resolution: {integrity: sha512-k7Nwx6vuWx1IJ9Bjuf4Zt1PEllcwe7cls3VNzm4CQ1/hgtFUK2bRNG3rvnpPUhFjmqJKAKtjV576KnUkHocg/g==}
+  zod@4.3.6:
+    resolution: {integrity: sha512-rftlrkhHZOcjDwkGlnUtZZkvaPHCsDATp4pGpuOOMDaTdDDXF91wuVDJoWoPsKX/3YPQ5fHuF3STjcYyKr+Qhg==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -4468,19 +4468,19 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@t3-oss/env-core@0.13.10(arktype@2.1.20)(typescript@5.9.3)(zod@4.3.5)':
+  '@t3-oss/env-core@0.13.10(arktype@2.1.20)(typescript@5.9.3)(zod@4.3.6)':
     optionalDependencies:
       arktype: 2.1.20
       typescript: 5.9.3
-      zod: 4.3.5
+      zod: 4.3.6
 
-  '@t3-oss/env-nextjs@0.13.10(arktype@2.1.20)(typescript@5.9.3)(zod@4.3.5)':
+  '@t3-oss/env-nextjs@0.13.10(arktype@2.1.20)(typescript@5.9.3)(zod@4.3.6)':
     dependencies:
-      '@t3-oss/env-core': 0.13.10(arktype@2.1.20)(typescript@5.9.3)(zod@4.3.5)
+      '@t3-oss/env-core': 0.13.10(arktype@2.1.20)(typescript@5.9.3)(zod@4.3.6)
     optionalDependencies:
       arktype: 2.1.20
       typescript: 5.9.3
-      zod: 4.3.5
+      zod: 4.3.6
 
   '@tailwindcss/typography@0.5.19(tailwindcss@3.4.19)':
     dependencies:
@@ -5357,16 +5357,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.12.0(@typescript-eslint/parser@8.53.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint@9.39.2(jiti@2.6.1)):
-    dependencies:
-      debug: 3.2.7
-    optionalDependencies:
-      '@typescript-eslint/parser': 8.53.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
-      eslint: 9.39.2(jiti@2.6.1)
-      eslint-import-resolver-node: 0.3.9
-    transitivePeerDependencies:
-      - supports-color
-
   eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.53.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1)):
     dependencies:
       '@rtsao/scc': 1.1.0
@@ -5378,7 +5368,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.39.2(jiti@2.6.1)
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.53.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint@9.39.2(jiti@2.6.1))
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.49.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@9.39.2(jiti@2.6.1))
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
@@ -7651,6 +7641,6 @@ snapshots:
 
   zod@3.25.76: {}
 
-  zod@4.3.5: {}
+  zod@4.3.6: {}
 
   zwitch@2.0.4: {}
