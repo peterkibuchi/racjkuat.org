@@ -43,7 +43,7 @@
     "@types/react": "19.2.11",
     "@types/react-dom": "19.2.3",
     "eslint": "^9.39.2",
-    "eslint-config-next": "^15.5.11",
+    "eslint-config-next": "^15.5.12",
     "mdast-util-toc": "^7.1.0",
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
