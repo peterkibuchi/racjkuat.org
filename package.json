@@ -42,7 +42,7 @@
     "@types/node": "^24.10.13",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
-    "eslint": "^9.39.2",
+    "eslint": "^9.39.3",
     "eslint-config-next": "^15.5.12",
     "mdast-util-toc": "^7.1.0",
     "postcss": "^8.5.6",
