@@ -59,8 +59,8 @@ export default async function PostPage(props: {
   );
 
   const relatedPosts =
-    post.related?.map((slug) =>
-      allPosts.find((post) => post.slugAsParams === slug)!,
+    post.related?.flatMap(
+      (slug) => allPosts.find((post) => post.slugAsParams === slug) ?? [],
     ) ?? [];
 
   const toc = await getTableOfContents(post.body.raw);

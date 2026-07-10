@@ -39,7 +39,9 @@ export default async function BlogCategory(props: {
 
   const posts = await Promise.all(
     allPosts
-      .filter((post) => post.categories.includes(category.slug))
+      .filter(
+        (post) => post.published && post.categories.includes(category.slug),
+      )
       .sort((a, b) => b.date.localeCompare(a.date))
       .map(async (post) => ({
         ...post,
