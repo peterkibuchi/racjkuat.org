@@ -13,16 +13,17 @@
 
 ## Technologies Used
 
-- React & Next.js
-- Shadcn UI for a beautiful, modern, accessible UI
-- Tailwind CSS for styling
+- React & Next.js (App Router)
+- Contentlayer & MDX for the blog content pipeline
+- shadcn/ui (built on Base UI) for a beautiful, modern, accessible UI
+- Tailwind CSS v4 for styling
 - Zod for schema declaration and validation
 
 ## Tools Used
 
 - Git & GitHub for version control and collaboration
 - TypeScript, ESLint and Prettier for typesafe code and best practices
-- GitHub Actions for automated `format`, `lint` and `typecheck` CI steps
+- GitHub Actions for automated `format`, `lint`, `typecheck` and `build` CI steps
 - Renovate for automated dependency updates
 - Vercel for Deployment
 
@@ -49,7 +50,7 @@ To run it locally, follow the steps below:
 
    ```bash
    # Clone repository
-   git clone git@github.com:msplke/racjkuat.org.git
+   git clone git@github.com:peterkibuchi/racjkuat.org.git
 
    # Install dependencies
    pnpm i
