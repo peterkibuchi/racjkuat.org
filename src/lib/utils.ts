@@ -31,7 +31,7 @@ export function constructMetadata({
     keywords: siteConfig.keywords,
     icons: {
       apple: "/apple-touch-icon.png",
-      icon: "/android-chrome-192x192.png",
+      icon: "/web-app-manifest-192x192.png",
       shortcut: "/favicon.ico",
     },
     manifest: `${siteConfig.url}/site.webmanifest`,
