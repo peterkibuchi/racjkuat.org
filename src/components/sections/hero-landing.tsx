@@ -16,6 +16,7 @@ export function HeroLanding() {
             "px-4",
           )}
           target="_blank"
+          rel="noopener noreferrer"
         >
           Follow us on Instagram <Icons.instagram className="ml-2 size-3.5" />
         </Link>

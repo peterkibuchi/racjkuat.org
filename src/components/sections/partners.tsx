@@ -198,15 +198,16 @@ export function Partners() {
         </h2>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-10 gap-y-8 lg:gap-16">
-          {partners.map((partners) => (
+          {partners.map((partner) => (
             <Link
               target="_blank"
-              key={partners.title}
-              href={partners.href}
-              aria-label={partners.title}
+              rel="noopener noreferrer"
+              key={partner.title}
+              href={partner.href}
+              aria-label={partner.title}
               className="flex flex-col items-center transition duration-250 hover:text-foreground"
             >
-              {partners.icon}
+              {partner.icon}
             </Link>
           ))}
         </div>
