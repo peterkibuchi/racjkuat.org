@@ -5,6 +5,9 @@ allowBuilds:
   protobufjs: true
   sharp: true
   unrs-resolver: true
+# Keep optional framework peers (e.g. nuxt/vue via @vercel/analytics) out of
+# the dependency tree; all real peers are declared as direct dependencies.
+autoInstallPeers: false
 minimumReleaseAgeExclude:
   - '@eslint/eslintrc@3.3.6'
   - '@eslint/js@9.39.5'
