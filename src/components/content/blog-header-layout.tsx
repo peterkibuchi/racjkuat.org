@@ -21,8 +21,8 @@ export function BlogHeaderLayout() {
 
   return (
     <>
-      <MaxWidthWrapper className="py-6 md:pb-8 md:pt-10 xl:px-0">
-        <div className="max-w-screen-md">
+      <MaxWidthWrapper className="py-6 md:pt-10 md:pb-8 xl:px-0">
+        <div className="max-w-(--breakpoint-md)">
           <h1 className="font-heading text-3xl md:text-4xl">
             {data?.title ?? "Blog"}
           </h1>
@@ -59,7 +59,7 @@ export function BlogHeaderLayout() {
           <p className="ml-2.5 text-sm font-medium">Categories</p>
         </Drawer.Trigger>
         <Drawer.Overlay
-          className="fixed inset-0 z-40 bg-background/80 backdrop-blur-sm"
+          className="fixed inset-0 z-40 bg-background/80 backdrop-blur-xs"
           onClick={closeDrawer}
         />
         <Drawer.Portal>

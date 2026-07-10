@@ -1,4 +1,5 @@
-import { type LucideIcon } from "lucide-react";
+import { type JSX } from "react";
+import { type LucideIcon, type LucideProps } from "lucide-react";
 
 export type MainNavItem = {
   title: string;

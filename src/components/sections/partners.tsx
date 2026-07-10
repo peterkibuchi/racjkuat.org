@@ -204,7 +204,7 @@ export function Partners() {
               key={partners.title}
               href={partners.href}
               aria-label={partners.title}
-              className="duration-250 flex flex-col items-center transition hover:text-foreground"
+              className="flex flex-col items-center transition duration-250 hover:text-foreground"
             >
               {partners.icon}
             </Link>

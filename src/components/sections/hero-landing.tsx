@@ -25,7 +25,7 @@ export function HeroLanding() {
           <span className="text-[#d41367]">Rotaract Club of JKUAT</span>
         </h1>
 
-        <p className="max-w-2xl text-balance leading-normal text-muted-foreground sm:text-lg sm:leading-8">
+        <p className="max-w-2xl leading-normal text-balance text-muted-foreground sm:text-lg sm:leading-8">
           We bring together members of our community to exchange ideas, develop
           professional and leadership skills, and have fun through service.
         </p>

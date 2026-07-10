@@ -1,0 +1,11 @@
+allowBuilds:
+  "@parcel/watcher": true
+  contentlayer2: true
+  esbuild: true
+  protobufjs: true
+  sharp: true
+  unrs-resolver: true
+minimumReleaseAgeExclude:
+  - '@eslint/eslintrc@3.3.6'
+  - '@eslint/js@9.39.5'
+  - eslint@9.39.5

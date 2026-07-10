@@ -21,13 +21,12 @@
     "noEmit": true,
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "plugins": [{ "name": "next" }],
     "incremental": true,
     "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
 
     /* Path Aliases */
-    "baseUrl": ".",
     "paths": {
       "~/*": ["./src/*"],
       "contentlayer/generated": ["./.contentlayer/generated"]
@@ -39,6 +38,7 @@
     "**/*.tsx",
     ".contentlayer/generated",
     ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
     "next-env.d.ts"
   ],
   "exclude": ["node_modules"]

@@ -59,8 +59,8 @@ export default async function PostPage(props: {
   );
 
   const relatedPosts =
-    post.related?.map(
-      (slug) => allPosts.find((post) => post.slugAsParams === slug)!,
+    post.related?.map((slug) =>
+      allPosts.find((post) => post.slugAsParams === slug)!,
     ) ?? [];
 
   const toc = await getTableOfContents(post.body.raw);
@@ -124,7 +124,7 @@ export default async function PostPage(props: {
               placeholder="blur"
               sizes="(max-width: 768px) 770px, 1000px"
               blurDataURL={thumbnailBlurhash ?? placeholderBlurhash}
-              className="aspect-[1200/630] border-b object-cover md:rounded-t-xl"
+              className="aspect-1200/630 border-b object-cover md:rounded-t-xl"
             />
 
             <div className="px-[.8rem] pb-10 md:px-8">
@@ -133,7 +133,7 @@ export default async function PostPage(props: {
 
             <hr className="mt-12 w-11/12 self-center" />
 
-            <div className="flex justify-center pb-8 pt-2 lg:pb-12 lg:pt-2">
+            <div className="flex justify-center pt-2 pb-8 lg:pt-2 lg:pb-12">
               <Link
                 href="/blog"
                 className={cn(buttonVariants({ variant: "ghost" }))}

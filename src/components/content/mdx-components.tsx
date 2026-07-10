@@ -73,10 +73,7 @@ const components = {
     />
   ),
   p: ({ className, ...props }: ComponentProps) => (
-    <p
-      className={cn("leading-7 [&:not(:first-child)]:mt-6", className)}
-      {...props}
-    />
+    <p className={cn("leading-7 not-first:mt-6", className)} {...props} />
   ),
   ul: ({ className, ...props }: ComponentProps) => (
     <ul className={cn("my-6 ml-6 list-disc", className)} {...props} />
@@ -90,7 +87,7 @@ const components = {
   blockquote: ({ className, ...props }: ComponentProps) => (
     <blockquote
       className={cn(
-        "mt-6 border-l-2 pl-6 italic [&>*]:text-muted-foreground",
+        "mt-6 border-l-2 pl-6 italic *:text-muted-foreground",
         className,
       )}
       {...props}
@@ -119,7 +116,7 @@ const components = {
   th: ({ className, ...props }: ComponentProps) => (
     <th
       className={cn(
-        "border px-4 py-2 text-left font-bold [&[align=center]]:text-center [&[align=right]]:text-right",
+        "border px-4 py-2 text-left font-bold [[align=center]]:text-center [[align=right]]:text-right",
         className,
       )}
       {...props}
@@ -128,7 +125,7 @@ const components = {
   td: ({ className, ...props }: ComponentProps) => (
     <td
       className={cn(
-        "border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right",
+        "border px-4 py-2 text-left [[align=center]]:text-center [[align=right]]:text-right",
         className,
       )}
       {...props}
@@ -152,8 +149,8 @@ const components = {
         <CopyButton
           value={__rawString__}
           className={cn(
-            "absolute right-4 top-4 z-20",
-            "duration-250 opacity-0 transition-all group-hover:opacity-100",
+            "absolute top-4 right-4 z-20",
+            "opacity-0 transition-all duration-250 group-hover:opacity-100",
           )}
         />
       )}
@@ -181,7 +178,7 @@ const components = {
   LinkedCard: ({ className, ...props }: React.ComponentProps<typeof Link>) => (
     <Link
       className={cn(
-        "flex w-full flex-col items-center rounded-xl border bg-card p-6 text-card-foreground shadow transition-colors hover:bg-muted/50 sm:p-10",
+        "flex w-full flex-col items-center rounded-xl border bg-card p-6 text-card-foreground shadow-sm transition-colors hover:bg-muted/50 sm:p-10",
         className,
       )}
       {...props}
@@ -198,6 +195,8 @@ export function Mdx({ code }: MdxProps) {
 
   return (
     <div className="mdx">
+      {/* `useMDXComponent` is Contentlayer's API for rendering compiled MDX. */}
+      {/* eslint-disable-next-line react-hooks/static-components */}
       <Component components={components} />
     </div>
   );
