@@ -23,7 +23,7 @@
 
 - Git & GitHub for version control and collaboration
 - TypeScript, ESLint and Prettier for typesafe code and best practices
-- GitHub Actions for automated `format`, `lint`, `typecheck` and `build` CI steps
+- GitHub Actions for automated `format`, `lint` and `typecheck` CI steps
 - Renovate for automated dependency updates
 - Vercel for Deployment
 
